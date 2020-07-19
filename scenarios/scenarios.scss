@@ -1,0 +1,79 @@
+.n {
+	font-style:italic;
+}
+
+.scen-container {
+	position:fixed;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	background:url('../images/rx/scan.jpg');
+	top:0;left:0;
+	z-index:500;
+	display:none;
+	.btn-return {
+		position:fixed;
+		bottom:0;
+		right:0;
+	}
+	.scen-menu {
+		box-sizing:border-box;
+		width:100%;
+		min-height:54px;
+		.btn {
+			width:24%;
+			margin:.5%;
+			max-width:200px;
+			line-height:35px;
+			font-size:16px;
+			box-sizing:border-box;
+			padding:4px;
+		}
+	}
+	.scen-content {
+    	margin: 16px 16px 16px 16px;
+		background: url('../images/rx/whitebox50bg.png');
+		border: solid;
+		border-width: 16px;
+		border-image: url('../images/rx/whitebox50.png') 16 round;
+		border-image-outset: 16px;
+		padding:0;
+		width:100%;
+		box-sizing:border-box;
+		overflow-y:scroll;
+		h2 {
+			text-align:center;
+			margin-top:-8px;
+		}
+		h3 {
+			text-align:center;
+		}
+		.scen-snippet {
+			padding-right:8px;
+			display:none;
+			.context-moment {
+				display:none;
+			}
+		}
+		li {
+			margin-bottom:10px;
+		}
+	}
+	.loading {
+		text-align:center;
+		display:none;
+	}
+}
+
+.noscroll {
+	overflow:hidden;
+}
+.scen-cont-nid {
+	display:none;
+}
+@media all and (max-width:500px) {
+	.scen-container .scen-menu .btn {
+		font-size:12px;
+	}
+}

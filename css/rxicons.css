@@ -1,0 +1,88 @@
+/* line 1, rxicons.scss */
+.rxico {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  background-position: center center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  margin: 2px;
+}
+/* line 9, rxicons.scss */
+.rxico.person {
+  background-image: url("../images/rx/rxico/person.png");
+  background-size: 100% 100%;
+}
+/* line 13, rxicons.scss */
+.rxico.crate {
+  background-image: url("../images/rx/rxico/crate.png");
+  background-size: 100% 91%;
+}
+/* line 17, rxicons.scss */
+.rxico.die {
+  background-image: url("../images/rx/rxico/die.png");
+  background-size: 100% 100%;
+}
+/* line 21, rxicons.scss */
+.rxico.endofday {
+  background-image: url("../images/rx/rxico/endofday.png");
+  background-size: 100% 100%;
+}
+/* line 25, rxicons.scss */
+.rxico.flip {
+  background-image: url("../images/rx/rxico/flip.png");
+  background-size: 100% 100%;
+}
+/* line 29, rxicons.scss */
+.rxico.globe {
+  background-image: url("../images/rx/rxico/globe.png");
+  background-size: 100% 91%;
+}
+/* line 33, rxicons.scss */
+.rxico.handshake {
+  background-image: url("../images/rx/rxico/handshake.png");
+  background-size: 100% 91%;
+}
+/* line 37, rxicons.scss */
+.rxico.infect {
+  background-image: url("../images/rx/rxico/infect.png");
+  background-size: 100% 100%;
+}
+/* line 41, rxicons.scss */
+.rxico.logo {
+  background-image: url("../images/rx/rxico/logo.png");
+  background-size: 100% 70%;
+}
+/* line 45, rxicons.scss */
+.rxico.look {
+  background-image: url("../images/rx/rxico/look.png");
+  background-size: 100% 100%;
+}
+/* line 49, rxicons.scss */
+.rxico.money {
+  background-image: url("../images/rx/rxico/money.png");
+  background-size: 100% 91%;
+}
+/* line 53, rxicons.scss */
+.rxico.question {
+  background-image: url("../images/rx/rxico/question.png");
+  background-size: 100% 91%;
+}
+/* line 57, rxicons.scss */
+.rxico.rxcard {
+  background-image: url("../images/rx/rxico/rxcard.png");
+  background-size: 100% 91%;
+}
+
+@media all and (max-width: 600px) {
+  /* line 65, rxicons.scss */
+  .rxico {
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    background-position: center center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    margin: 2px;
+  }
+}

@@ -1,0 +1,73 @@
+.rxico {
+	width:60px;height:60px;
+	display:inline-block;
+	background-position:center center;
+	background-color:transparent;
+	background-repeat:no-repeat;
+	margin:2px;
+
+	&.person {
+		background-image:url('../images/rx/rxico/person.png');
+		background-size:100% 100%;
+	}
+	&.crate {
+		background-image:url('../images/rx/rxico/crate.png');
+		background-size:100% 91%;
+	}
+	&.die {
+		background-image:url('../images/rx/rxico/die.png');
+		background-size:100% 100%;
+	}
+	&.endofday {
+		background-image:url('../images/rx/rxico/endofday.png');
+		background-size:100% 100%;
+	}
+	&.flip {
+		background-image:url('../images/rx/rxico/flip.png');
+		background-size:100% 100%;
+	}
+	&.globe {
+		background-image:url('../images/rx/rxico/globe.png');
+		background-size:100% 91%;
+	}
+	&.handshake {
+		background-image:url('../images/rx/rxico/handshake.png');
+		background-size:100% 91%;
+	}
+	&.infect {
+		background-image:url('../images/rx/rxico/infect.png');
+		background-size:100% 100%;
+	}
+	&.logo {
+		background-image:url('../images/rx/rxico/logo.png');
+		background-size:100% 70%;
+	}
+	&.look {
+		background-image:url('../images/rx/rxico/look.png');
+		background-size:100% 100%;
+	}
+	&.money {
+		background-image:url('../images/rx/rxico/money.png');
+		background-size:100% 91%;
+	}
+	&.question {
+		background-image:url('../images/rx/rxico/question.png');
+		background-size:100% 91%;
+	}
+	&.rxcard {
+		background-image:url('../images/rx/rxico/rxcard.png');
+		background-size:100% 91%;
+	}
+
+}
+
+@media all and (max-width:600px) {
+	.rxico {
+		width:33px;height:33px;
+		display:inline-block;
+		background-position:center center;
+		background-color:transparent;
+		background-repeat:no-repeat;
+		margin:2px;
+	}
+}

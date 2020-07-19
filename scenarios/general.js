@@ -103,6 +103,7 @@ jQuery( document ).ready(function( $ ) {
 	});
 	
 	$(".scen-btn").click(function() {
+		$(".scentable-container").hide();
 		$(".scen-btn").off();
 		$(".scen-btn-cont").off();
 		var daname = $(this).text();
@@ -154,8 +155,7 @@ function sizeDaWindow() {
 	$(".scen-content").width($(window).width()-64);
 }
 function openScenarioBox() {
-	$("body").addClass("noscroll");
-	$(".scen-container").show();
+	$(".scen-container").css("display", "flex");
 }
 function showContent(dabutton,dacontent) {
 	$(guiAllBtn).removeClass("btn-theme");

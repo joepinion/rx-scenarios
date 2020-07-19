@@ -1,131 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700");
-.scen-data {
-	display: none;
-}
-
-
-/* line 2, rxbuy.scss */
-
-
-.rxbuy div {
-  text-align: center;
-}
-/* line 5, rxbuy.scss */
-.rxbuy .task, .rxbuy .whose {
-  display: none;
-}
-/* line 8, rxbuy.scss */
-.rxbuy .thinking {
-  width: 100%;
-  padding-top: 75px;
-  background: url("../images/loading.gif") top center no-repeat;
-  display: none;
-}
-
-/* line 17, rxbuy.scss */
-.onerecruit {
-  padding: 10px;
-  margin-bottom: 15px;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-/* line 1, scenarios.scss */
-.n {
-  font-style: italic;
-}
-
-/* line 5, scenarios.scss */
-.scen-container {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background: url("../images/rx/scan.jpg");
-  top: 0;
-  left: 0;
-  z-index: 500;
-  display: none;
-}
-/* line 15, scenarios.scss */
-.scen-container .btn-return {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
-/* line 20, scenarios.scss */
-.scen-container .scen-menu {
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 54px;
-}
-/* line 24, scenarios.scss */
-.scen-container .scen-menu .btn {
-  width: 24%;
-  margin: .5%;
-  max-width: 200px;
-  line-height: 35px;
-  font-size: 16px;
-  box-sizing: border-box;
-  padding: 4px;
-}
-/* line 34, scenarios.scss */
-.scen-container .scen-content {
-  margin: 16px 16px 16px 16px;
-  background: url("../images/rx/whitebox50bg.png");
-  border: solid;
-  border-width: 16px;
-  border-image: url("../images/rx/whitebox50.png") 16 round;
-  border-image-outset: 16px;
-  padding: 0;
-  width: 100%;
-  box-sizing: border-box;
-  overflow-y: scroll;
-}
-/* line 45, scenarios.scss */
-.scen-container .scen-content h2 {
-  text-align: center;
-  margin-top: -8px;
-}
-/* line 49, scenarios.scss */
-.scen-container .scen-content h3 {
-  text-align: center;
-}
-/* line 52, scenarios.scss */
-.scen-container .scen-content .scen-snippet {
-  padding-right: 8px;
-  display: none;
-}
-/* line 55, scenarios.scss */
-.scen-container .scen-content .scen-snippet .context-moment {
-  display: none;
-}
-/* line 59, scenarios.scss */
-.scen-container .scen-content li {
-  margin-bottom: 10px;
-}
-/* line 63, scenarios.scss */
-.scen-container .loading {
-  text-align: center;
-  display: none;
-}
-
-/* line 69, scenarios.scss */
-.noscroll {
-  overflow: hidden;
-}
-
-/* line 72, scenarios.scss */
-.scen-cont-nid {
-  display: none;
-}
-
-@media all and (max-width: 500px) {
-  /* line 76, scenarios.scss */
-  .scen-container .scen-menu .btn {
-    font-size: 12px;
-  }
-}
 /* line 1, rxicons.scss */
 .rxico {
   width: 60px;
@@ -214,551 +87,124 @@
     margin: 2px;
   }
 }
-/* line 7, rx.scss */
+/* line 5, rx.scss */
+.scen-data {
+  display: none;
+}
+
+/* line 9, rx.scss */
 .clearit {
   clear: both;
 }
 
-/* line 11, rx.scss */
-div {
-  text-indent: none !important;
-}
-
-/* line 15, rx.scss */
-body#skifiBody {
+/* line 14, rx.scss */
+body {
   background: url("../images/rx/scan.jpg") fixed;
   font-family: 'Rajdhani', sans-serif;
   font-weight: 500;
   font-size: 1em;
-}
-
-/* line 22, rx.scss */
-#contentAndSidebars h1 {
-  font-size: 1.6em;
-  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 /* line 24, rx.scss */
-.urgbtn, #main_structure #highlightedRegion .btn.urgbtn {
-  background-color: #b70707;
-  box-sizing: border-box;
-  font-weight: bold;
+h1 {
+  text-align: center;
 }
 
-/* line 30, rx.scss */
-.img {
-  max-width: 100%;
-  height: auto !important;
+/* line 27, rx.scss */
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 6px;
+  padding: 3px 10px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #5f5f5f;
+  border: 1px solid #dddddd;
 }
-
-/* line 35, rx.scss */
-.node img {
-  box-shadow: 0;
-  -moz-box-shadow: 0;
-  -webkit-box-shadow: 0 0 0 transparent;
+/* line 39, rx.scss */
+.btn:hover {
+  background-color: #dddddd;
 }
-
-/* line 41, rx.scss */
-.insetleft {
-  float: left;
-  clear: left;
-  margin: 0 15px 5px 0;
+/* line 42, rx.scss */
+.btn.disabled {
+  opacity: .3;
 }
 
 /* line 46, rx.scss */
-.insetright {
-  float: right;
-  clear: right;
-  margin: 0 0px 5px 15px;
+tr {
+  margin-bottom: 10px;
 }
 
-/* line 52, rx.scss */
-.carttop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 10000;
-  opacity: .95;
+/* line 49, rx.scss */
+.site-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
-/* line 59, rx.scss */
-.carttop p {
-  padding: 0;
-  margin: 0;
+
+/* line 57, rx.scss */
+.img {
+  max-width: 100%;
+  height: auto;
 }
+
 /* line 62, rx.scss */
-.carttop p a.btn {
-  padding: 6px 12px;
-}
-
-/* line 68, rx.scss */
-#contentAndSidebars .blocktitle {
-  color: #20607a;
-  font-weight: 700;
-  font-size: 1.4em;
-  text-transform: uppercase;
-  padding-left: 0;
-}
-
-/* line 76, rx.scss */
-.theme-border, .sf-menu li ul, .box, .plain-title, .portfolio-container .views-field-created, #FooterRegion, #contentAndSidebars .blocktitle, #highlightedRegion {
-  border: none;
-}
-
-/* line 80, rx.scss */
-div.terms {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 85, rx.scss */
-.not-logged-in #verytopRegion {
-  display: none;
-}
-
-/* line 89, rx.scss */
-#verytopRegion {
-  color: #dddddd;
-  background: url("../images/rx/emerghead2.jpg") #ff0000 repeat-x;
-  height: 51px;
-}
-/* line 95, rx.scss */
-#verytopRegion h3 {
-  margin: 0;
-  line-height: 100%;
-}
-/* line 99, rx.scss */
-#verytopRegion #block-phg-raxxon-emergency-notification {
-  text-align: center;
-  vertical-align: middle;
-}
-/* line 102, rx.scss */
-#verytopRegion #block-phg-raxxon-emergency-notification .content {
-  padding: 8px 0;
-}
-/* line 104, rx.scss */
-#verytopRegion #block-phg-raxxon-emergency-notification .content p {
-  margin: 0;
-  line-height: 75%;
-}
-
-@media all and (max-width: 500px) {
-  /* line 111, rx.scss */
-  #verytopRegion h3 {
-    font-size: .8em;
-  }
-  /* line 116, rx.scss */
-  #verytopRegion #block-phg-raxxon-emergency-notification .content p {
-    font-size: .7em;
-  }
-
-  /* line 122, rx.scss */
-  h1, #contentAndSidebars h1 {
-    font-size: 1.4em;
-  }
-
-  /* line 125, rx.scss */
-  #contentAndSidebars .blocktitle {
-    font-size: 1.2em;
-  }
-
-  /* line 128, rx.scss */
-  h3 {
-    font-size: 14px;
-  }
-}
-/* line 132, rx.scss */
-.plain-title {
-  margin-right: 20px;
-}
-
-/* line 137, rx.scss */
-#header #texttitles {
-  margin-top: 4px;
-}
-/* line 140, rx.scss */
-#header #site-name {
-  font-size: 2em;
-  line-height: 110%;
-  margin-bottom: 6px;
-}
-/* line 144, rx.scss */
-#header #site-name a {
-  color: #fff;
-  opacity: .8;
-  line-height: 110%;
-}
-
-/* line 152, rx.scss */
-#selectnav1 {
-  margin-top: 12px;
-}
-
-/* line 156, rx.scss */
-#mainMenu {
-  text-align: right;
-}
-
-/* line 159, rx.scss */
-#block-openid-connect-openid-connect-login {
-  color: #dedede;
-  text-align: right;
-  max-width: 300px;
-  font-size: 1.3em;
-  margin-top: 25px;
-  display: inline-block;
-}
-/* line 166, rx.scss */
-#block-openid-connect-openid-connect-login input {
-  display: inline-block;
-  border-radius: 2px;
-  text-align: center;
-  vertical-align: middle;
-  transition: all .3s linear;
-  font-size: 12px;
-  line-height: 20px;
-  color: #dedede;
-  background-color: #20607a;
-  background-image: none;
-  box-shadow: none;
-  text-shadow: none;
-}
-
-/* line 182, rx.scss */
-#StickyMainMenu #block-openid-connect-openid-connect-login {
-  margin-top: 0;
-}
-/* line 184, rx.scss */
-#StickyMainMenu #block-openid-connect-openid-connect-login #openid-connect-login-form {
-  margin-bottom: 0;
-}
-/* line 187, rx.scss */
-#StickyMainMenu #block-openid-connect-openid-connect-login p {
-  display: none;
-}
-
-/* line 193, rx.scss */
-#main_structure #highlightedRegion {
-  font-weight: 500;
-  text-align: center;
-  background: url("../images/rx/notificationbg.jpg") repeat;
-  background-size: auto 100%;
-  color: #000000;
-  min-height: 224px;
-}
-/* line 200, rx.scss */
-#main_structure #highlightedRegion .btn {
-  background-color: #20607a;
-  text-shadow: none;
-  color: #dedede;
-}
-/* line 205, rx.scss */
-#main_structure #highlightedRegion .content {
-  padding: 25px 0;
-  min-height: 224px;
-  box-sizing: border-box;
-  text-align: center;
-}
-/* line 210, rx.scss */
-#main_structure #highlightedRegion .content .left, #main_structure #highlightedRegion .content .right {
-  width: 48%;
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
-}
-/* line 216, rx.scss */
-#main_structure #highlightedRegion .content .marg {
-  margin-right: 4%;
-}
-/* line 219, rx.scss */
-#main_structure #highlightedRegion .content .right {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 15px 8px;
-  box-sizing: border-box;
-}
-/* line 226, rx.scss */
-#main_structure #highlightedRegion h4 {
-  display: none;
-}
-/* line 229, rx.scss */
-#main_structure #highlightedRegion h3 {
-  color: #20607a;
-  line-height: 100%;
-  font-weight: 700;
-  margin: 0px 0px 8px;
-}
-/* line 235, rx.scss */
-#main_structure #highlightedRegion p, #main_structure #highlightedRegion form {
-  margin: 10px 0;
-  line-height: 120%;
-}
-/* line 239, rx.scss */
-#main_structure #highlightedRegion .btn {
-  margin: 4px 0;
-}
-/* line 242, rx.scss */
-#main_structure #highlightedRegion #highlighthazard {
-  min-height: 224px;
-  background-image: url("../images/rx/hazardrunner.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-@media all and (max-width: 750px) {
-  /* line 252, rx.scss */
-  #main_structure #highlightedRegion .content .left, #main_structure #highlightedRegion .content .right {
-    width: 100%;
-  }
-  /* line 255, rx.scss */
-  #main_structure #highlightedRegion .content .marg {
-    margin-bottom: 15px;
-  }
-}
-/* line 263, rx.scss */
-#main_structure {
-  background: none;
-  background-color: none;
-}
-
-/* line 268, rx.scss */
-.front #contentAndSidebars {
-  padding: 20px 0 0 0;
-}
-
-/* line 274, rx.scss */
-#contentAndSidebars {
-  background: none;
-  padding: 20px 0 0px 0px;
-}
-/* line 277, rx.scss */
-#contentAndSidebars .block {
-  margin: 16px 16px 60px 16px;
-  background: url("../images/rx/whitebox50bg.png");
-  /*border:1px solid #999999;
-  padding:10px;*/
-  border: solid;
-  border-width: 16px;
-  border-image: url("../images/rx/whitebox50.png") 16 round;
-  border-image-outset: 16px;
-  padding: 0;
-}
-/* line 289, rx.scss */
-#contentAndSidebars a {
-  font-weight: 700;
-}
-
-/* line 296, rx.scss */
-#header {
-  background-image: url("../images/rx/box.jpg");
-  background-repeat: no-repeat;
-  background-size: 160% auto;
-  background-position: center center;
-}
-
-/* line 303, rx.scss */
-#title-region {
-  background-color: black;
-  background-image: url("../images/rx/circutg.jpg");
-}
-/* line 307, rx.scss */
-#title-region .inner {
-  padding: 10px;
-}
-/* line 311, rx.scss */
-#title-region .page-title, #title-region .page-title a {
-  color: #000;
-  margin-right: 0px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-/* line 320, rx.scss */
-#logocontainer img {
-  max-width: 100px;
-  height: auto;
-  margin-bottom: 3px;
-}
-
-/* line 328, rx.scss */
-.sf-menu a, .sf-menu a:visited, .sf-menu a.active {
-  color: #cccccc;
-  font-size: 1.2em;
-  margin-right: 0;
-}
-
-/* line 335, rx.scss */
-#stickyHeader #stickyInner {
-  padding: 5px 20px;
-}
-/* line 339, rx.scss */
-#stickyHeader #stickyTitle h2 {
-  font-size: 1.1em;
-  margin-top: 3px;
-}
-/* line 346, rx.scss */
-#stickyHeader #StickyMainMenu .sf-menu a, #stickyHeader #StickyMainMenu .sf-menu a:visited {
-  padding: 0 8px;
-  color: #aaaaaa;
-  font-size: .8em;
-  margin-top: 5px;
-}
-
-/* line 356, rx.scss */
-#toTop {
-  background: url("../images/toTop.png") no-repeat;
-}
-
-/* line 360, rx.scss */
-#toTop img.visible-desktop {
-  display: inherit;
-}
-
-/* line 364, rx.scss */
-.region-content .content {
-  padding: 0;
-}
-
-/* line 368, rx.scss */
-.node {
-  padding-bottom: 0;
-}
-
-/* line 373, rx.scss */
-form .form-item label {
-  margin-bottom: 0;
-  font-size: 1.2em;
-}
-/* line 377, rx.scss */
-form .form-item input.form-text {
-  width: 100%;
-  margin-bottom: 0;
-}
-
-/* line 384, rx.scss */
-#contentAndSidebars .view-updates-from-raxxon h3 a, #contentAndSidebars .view-updates-from-raxxon h3 a:hover {
-  color: #ffffff;
-  font-weight: 400;
-}
-/* line 390, rx.scss */
-#contentAndSidebars .view-updates-from-raxxon .white a, #contentAndSidebars .view-updates-from-raxxon .white a:hover {
-  color: #20607a;
-}
-/* line 392, rx.scss */
-#contentAndSidebars .view-updates-from-raxxon .views-row {
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 15px;
-  margin-bottom: 15px;
-}
-/* line 397, rx.scss */
-#contentAndSidebars .view-updates-from-raxxon .views-row h3 {
-  padding: 12px;
-  margin: 4px 0;
-}
-/* line 400, rx.scss */
-#contentAndSidebars .view-updates-from-raxxon .views-row h3.white {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-/* line 403, rx.scss */
-#contentAndSidebars .view-updates-from-raxxon .views-row h3.purple {
-  background-color: #5b2c7e;
-}
-/* line 406, rx.scss */
-#contentAndSidebars .view-updates-from-raxxon .views-row h3.red {
-  background-color: #9c1c24;
-}
-/* line 409, rx.scss */
-#contentAndSidebars .view-updates-from-raxxon .views-row h3.orange {
-  background-color: #d1821a;
-}
-/* line 412, rx.scss */
-#contentAndSidebars .view-updates-from-raxxon .views-row h3.purple, #contentAndSidebars .view-updates-from-raxxon .views-row h3.red, #contentAndSidebars .view-updates-from-raxxon .views-row h3.orange {
-  padding-left: 50px;
-  background-image: url("../images/rx/biosmall.png");
-  background-position: 9px center;
-  background-repeat: no-repeat;
-}
-/* line 419, rx.scss */
-#contentAndSidebars .view-updates-from-raxxon .views-row .views-field-created {
-  text-align: right;
-  margin-bottom: 8px;
-  margin-right: 5px;
-}
-/* line 420, rx.scss */
-#contentAndSidebars .view-updates-from-raxxon .views-row .views-field-field-secruity-level {
-  text-align: right;
-  margin-right: 5px;
-}
-
-/* line 425, rx.scss */
-.rxmap {
+.scentable {
   width: 100%;
 }
-
-/* line 430, rx.scss */
-#block-phg-raxxon-global-map-data, #block-phg-raxxon-my-map-data, #block-phg-raxxon-region-map-data {
-  display: none;
-}
-
-/* line 434, rx.scss */
-.mapcontrols {
-  text-align: center;
-}
-/* line 436, rx.scss */
-.mapcontrols .dayref {
-  display: inline-block;
-  width: 50px;
-  text-align: center;
-}
-/* line 441, rx.scss */
-.mapcontrols .btn {
-  margin: 20px 2%;
-  padding: 8px 4%;
-}
-/* line 445, rx.scss */
-.mapcontrols label {
-  display: inline-block;
-}
-/* line 446, rx.scss */
-.mapcontrols input {
-  display: inline-block;
-}
-
-/* line 449, rx.scss */
-.fa-shopping-cart {
-  font-size: 18px;
-  height: auto;
-}
-
-/* line 456, rx.scss */
+/* line 64, rx.scss */
 .scentable img {
   max-width: 100%;
-  max-height: 180px;
   width: auto;
   height: auto;
 }
-/* line 462, rx.scss */
+/* line 69, rx.scss */
 .scentable td {
-  max-width: 250px;
   vertical-align: middle;
   text-align: center;
 }
 
-@media all and (max-width: 600px) {
-  /* line 470, rx.scss */
-  .scentable img {
-    display: none;
-  }
+/* line 76, rx.scss */
+.scen-container {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
 }
-/* line 474, rx.scss */
-#FooterRegion #footer a, #FooterRegion .more-link a {
-  color: #bbbbbb !important;
+/* line 82, rx.scss */
+.scen-container .scen-menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-/* line 479, rx.scss */
-.node-blog .links {
+/* line 89, rx.scss */
+.scen-container .scen-menu .btn {
+  font-size: 20px;
+  padding: 10px;
+}
+/* line 95, rx.scss */
+.scen-container .scen-content .scen-snippet {
   display: none;
 }
-
-/* line 482, rx.scss */
-.region-footer #block-block-2 {
-  font-size: .8em;
+/* line 97, rx.scss */
+.scen-container .scen-content .scen-snippet .context-moment {
+  display: none;
+}
+/* line 103, rx.scss */
+.scen-container .loading {
+  text-align: center;
+  display: none;
 }
